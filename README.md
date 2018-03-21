@@ -1,13 +1,13 @@
 
-# react-native-device-metrics
+# aerogear-react-native-core
 
 ## Getting started
 
-`$ npm install react-native-device-metrics --save`
+`$ npm install aerogear-react-native-core --save`
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-device-metrics`
+`$ react-native link aerogear-react-native-core`
 
 ### Manual installation
 
@@ -15,7 +15,7 @@
 #### iOS
 
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-device-metrics` and add `MobileCore.xcodeproj`
+2. Go to `node_modules` ➜ `aerogear-react-native-core` and add `MobileCore.xcodeproj`
 3. In XCode, in the project navigator, select your project. Add `libMobileCore.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
 4. Run your project (`Cmd+R`)<
 
@@ -26,17 +26,17 @@
   - Add `new MobileCorePackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
-  	include ':react-native-device-metrics'
-  	project(':react-native-device-metrics').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-device-metrics/android')
+  	include ':aerogear-react-native-core'
+  	project(':aerogear-react-native-core').projectDir = new File(rootProject.projectDir, 	'../node_modules/aerogear-react-native-core/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      compile project(':react-native-device-metrics')
+      compile project(':aerogear-react-native-core')
   	```
 
 ## Usage
 ```javascript
-import MobileCore from 'react-native-device-metrics';
+import MobileCore from 'aerogear-react-native-core';
 
 const SDK = MobileCore.getDeviceMetrics();
 ```

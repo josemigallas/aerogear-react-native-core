@@ -1,5 +1,5 @@
 {
-  "name": "react-native-device-metrics",
+  "name": "aerogear-react-native-core",
   "version": "0.0.1",
   "description": "Get your device's OS SDK version",
   "main": "index.js",
