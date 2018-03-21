@@ -1,0 +1,17 @@
+{
+  "name": "react-native-device-metrics",
+  "version": "0.0.1",
+  "description": "Get your device's OS SDK version",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": "Jose Miguel Gallas Olmedo",
+  "license": "Apache",
+  "peerDependencies": {
+    "react-native": "^0.54.2"
+  }
+}
