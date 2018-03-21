@@ -1,6 +1,6 @@
 {
   "name": "aerogear-react-native-core",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Get your device's OS SDK version",
   "main": "index.js",
   "scripts": {
