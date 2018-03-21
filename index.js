@@ -1,8 +1,8 @@
 
 import { NativeModules } from 'react-native';
 
-const { RNReactNativeLibrary } = NativeModules;
+const { MobileCore } = NativeModules;
 
 export {
-  RNReactNativeLibrary
+  MobileCore
 };

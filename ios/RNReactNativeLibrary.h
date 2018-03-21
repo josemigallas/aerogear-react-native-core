@@ -5,7 +5,7 @@
 #import <React/RCTBridgeModule.h>
 #endif
 
-@interface RNReactNativeLibrary : NSObject <RCTBridgeModule>
+@interface MobileCore : NSObject <RCTBridgeModule>
 
 @end
   

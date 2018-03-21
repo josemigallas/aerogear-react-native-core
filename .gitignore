@@ -29,15 +29,6 @@ DerivedData
 *.ipa
 *.xcuserstate
 project.xcworkspace
-      
-
-# Android/IntelliJ
-#
-build/
-.idea
-.gradle
-local.properties
-*.iml
 
 # BUCK
 buck-out/

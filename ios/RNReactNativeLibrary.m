@@ -1,7 +1,7 @@
 
-#import "RNReactNativeLibrary.h"
+#import "MobileCore.h"
 
-@implementation RNReactNativeLibrary
+@implementation MobileCore
 
 - (dispatch_queue_t)methodQueue
 {
