@@ -1,5 +1,6 @@
 
 #import "MobileCore.h"
+@import UIKit;
 
 @implementation MobileCore
 
@@ -10,7 +11,8 @@ RCT_EXPORT_METHOD(getDeviceMetrics:(RCTPromiseResolveBlock)resolve
 {
     NSDictionary *deviceMetrics = @{
                                     @"platform": @"ios",
-                                    @"platformVersion": @"1"
+                                    @"platformVersion": [[UIDevice currentDevice] systemVersion],
+                                    @"device": [[UIDevice currentDevice] model]
                                     };
 
     resolve(deviceMetrics);
