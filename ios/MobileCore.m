@@ -3,11 +3,17 @@
 
 @implementation MobileCore
 
-- (dispatch_queue_t)methodQueue
-{
-    return dispatch_get_main_queue();
-}
 RCT_EXPORT_MODULE()
 
+RCT_EXPORT_METHOD(getDeviceMetrics:(RCTPromiseResolveBlock)resolve
+                  rejecter:(RCTPromiseRejectBlock)reject)
+{
+    NSDictionary *deviceMetrics = @{
+                                    @"platform": @"ios",
+                                    @"platformVersion": @"1"
+                                    };
+
+    resolve(deviceMetrics);
+}
+
 @end
-  

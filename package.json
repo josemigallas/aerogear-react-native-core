@@ -12,6 +12,6 @@
   "author": "Jose Miguel Gallas Olmedo",
   "license": "Apache",
   "peerDependencies": {
-    "react-native": "^0.54.2"
+    "react-native": "0.53.3"
   }
 }
