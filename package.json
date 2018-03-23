@@ -11,6 +11,10 @@
   ],
   "author": "Jose Miguel Gallas Olmedo",
   "license": "Apache",
+  "typings": "./typings/main.d.ts",
+  "dependencies": {
+    "@aerogearservices/core": "1.0.0"
+  },
   "peerDependencies": {
     "react-native": "0.53.3"
   }

@@ -1,8 +1,5 @@
+import RNMetricsService from "./src/metrics/MetricsService"
 
-import { NativeModules } from 'react-native';
-
-const { MobileCore } = NativeModules;
-
-export {
-  MobileCore
+exports = {
+  RNMetricsService
 };
