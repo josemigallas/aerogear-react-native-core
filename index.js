@@ -1,5 +1,5 @@
-import RNMetricsService from "./src/metrics/MetricsService"
+import RNMetricsService from "./src/metrics/RNMetricsService"
 
-exports = {
+export {
   RNMetricsService
 };

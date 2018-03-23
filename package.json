@@ -13,7 +13,7 @@
   "license": "Apache",
   "typings": "./typings/main.d.ts",
   "dependencies": {
-    "@aerogearservices/core": "1.0.0"
+    "@aerogearservices/core": "file:../aerogear-js-sdk/packages/core/"
   },
   "peerDependencies": {
     "react-native": "0.53.3"
