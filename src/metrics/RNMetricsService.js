@@ -3,7 +3,6 @@ import { MetricsService } from "@aerogearservices/core";
 
 const RNMobileCore = NativeModules.MobileCore;
 
-// class RNMetricsService extends MetricsService {
 class RNMetricsService extends MetricsService {
 
   async sendAppAndDeviceMetrics() {
