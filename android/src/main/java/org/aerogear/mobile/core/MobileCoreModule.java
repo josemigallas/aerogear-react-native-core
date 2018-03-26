@@ -1,5 +1,6 @@
 package org.aerogear.mobile.core;
 
+import android.content.pm.PackageInfo;
 import android.os.Build;
 
 import com.facebook.react.bridge.Arguments;
@@ -28,13 +29,31 @@ public class MobileCoreModule extends ReactContextBaseJavaModule {
   @ReactMethod
   public void getDeviceMetrics(Promise promise) {
     try {
-      final WritableMap map = Arguments.createMap();
-      map.putString("platform", "android");
-      map.putString("platformVersion", String.valueOf(Build.VERSION.SDK_INT));
-      promise.resolve(map);
+      final WritableMap deviceMetrics = Arguments.createMap();
+      deviceMetrics.putString("platform", "android");
+      deviceMetrics.putString("platformVersion", String.valueOf(Build.VERSION.SDK_INT));
+      promise.resolve(deviceMetrics);
 
     } catch (Exception e) {
       promise.reject("GetDeviceMetricsError", e.getMessage());
+    }
+
+  }
+
+  @ReactMethod
+  public void getAppMetrics(Promise promise) {
+    try {
+      String packageName = reactContext.getPackageName();
+      PackageInfo packageInfo = reactContext.getPackageManager()
+        .getPackageInfo(packageName, 0);
+
+      final WritableMap appMetrics = Arguments.createMap();
+      appMetrics.putString("appId", packageName);
+      appMetrics.putString("appVersion", packageInfo.versionName);
+      promise.resolve(appMetrics);
+
+    } catch (Exception e) {
+      promise.reject("GetAppMetricsError", e.getMessage());
     }
 
   }
