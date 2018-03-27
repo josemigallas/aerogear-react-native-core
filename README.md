@@ -27,8 +27,8 @@ In case automatic installation didn't work
 3. In XCode, in the project navigator, select your project. Add `libMobileCore.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
 4. Run your project (`Cmd+R`)<
 
-<details>
-<p>
+</p>
+</details>
 
 <details><summary>Android</summary>
 <p>
@@ -46,8 +46,8 @@ In case automatic installation didn't work
       compile project(':aerogear-react-native-sdk')
   	```
 
-<details>
-<p>
+</p>
+</details>
 
 ## Usage
 
@@ -59,19 +59,19 @@ import React, { Component } from "react";
 
 class MyComponent extends Component {
 
-	componentWillMount() {
-		const metricsService = new RNMetricsService({
-			url: "http://your-metrics-service/metrics" 
-		});
+  componentWillMount() {
+    const metricsService = new RNMetricsService({
+      url: "http://your-metrics-service/metrics" 
+    });
 	
-		metricsService.sendAppAndDeviceMetrics()
-			.then(() => this.handleSuccess())
-			.catch(err => this.handleError(err));
-		}
+    metricsService.sendAppAndDeviceMetrics()
+      .then(() => this.handleSuccess())
+      .catch(err => this.handleError(err));
+  }
 
-	render() {
-		...
-	}
+  render() {
+    ...
+  }
 
 }
 
