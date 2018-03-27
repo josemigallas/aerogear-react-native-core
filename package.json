@@ -1,19 +1,21 @@
 {
-  "name": "aerogear-react-native-core",
-  "version": "0.0.2",
-  "description": "Get your device's OS SDK version",
+  "name": "aerogear-react-native-sdk",
+  "version": "0.0.3",
+  "description": "React Native Core SDK for AeroGear services",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "aerogear",
+    "mobile"
   ],
-  "author": "Jose Miguel Gallas Olmedo",
-  "license": "Apache",
+  "author": "Aerogear <aerogear@googlegroups.com>",
+  "license": "Apache-2.0",
   "typings": "./typings/main.d.ts",
   "dependencies": {
-    "@aerogearservices/core": "file:../aerogear-js-sdk/packages/core/"
+    "aerogear-core": "file:../aerogear-js-sdk/packages/core/"
   },
   "peerDependencies": {
     "react-native": "0.53.3"

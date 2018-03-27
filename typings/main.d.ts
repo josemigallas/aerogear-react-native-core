@@ -1,4 +1,4 @@
-import { ServiceConfiguration } from "@aerogearservices/core";
+import { ServiceConfiguration } from "aerogear-core";
 
 declare class RNMetricsService {
 
