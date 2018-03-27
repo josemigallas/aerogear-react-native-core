@@ -19,14 +19,19 @@ This step is usually enough
 
 In case automatic installation didn't work
 
-#### iOS
+<details><summary>iOS</summary>
+<p>
 
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
 2. Go to `node_modules` ➜ `aerogear-react-native-sdk` and add `MobileCore.xcodeproj`
 3. In XCode, in the project navigator, select your project. Add `libMobileCore.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
 4. Run your project (`Cmd+R`)<
 
-#### Android
+<details>
+<p>
+
+<details><summary>Android</summary>
+<p>
 
 1. Open up `android/app/src/main/java/[...]/MainActivity.java`
   - Add `import com.reactlibrary.MobileCorePackage;` to the imports at the top of the file
@@ -40,6 +45,9 @@ In case automatic installation didn't work
   	```
       compile project(':aerogear-react-native-sdk')
   	```
+
+<details>
+<p>
 
 ## Usage
 
